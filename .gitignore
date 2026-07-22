@@ -1,0 +1,28 @@
+# Identifiable or local research data
+*linkage*
+*reviewer_key*
+*identifiable*
+completed_workbooks/
+private/
+irb_private/
+
+# Credentials and environment files
+.env
+.env.*
+*.key
+*.pem
+
+# Office temporary files
+~$*.xlsx
+~$*.docx
+
+# Python/R temporary files
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

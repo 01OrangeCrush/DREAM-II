@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite the DREAM II repository and the associated published rubric paper."
+title: "DREAM II: Prompt Fidelity and AI-Resilient Assessment Evaluation"
+type: software
+authors:
+  - family-names: Glantz
+    given-names: Edward J.
+  - family-names: McCauley
+    given-names: James
+  - family-names: Nasereddin
+    given-names: Maher
+  - family-names: Bartolacci
+    given-names: Michael R.
+repository-code: "https://github.com/01OrangeCrush/DREAM-II"
+version: "0.1.0"
+date-released: "2026-07-22"
+preferred-citation:
+  type: conference-paper
+  title: "Validating an AI-Resilient Assessment Rubric: A Pilot Comparison of LLM and Cybersecurity Faculty Judgments on Assignment-Prompt Design"
+  authors:
+    - family-names: Glantz
+      given-names: Edward J.
+    - family-names: McCauley
+      given-names: James
+    - family-names: Nasereddin
+      given-names: Maher
+    - family-names: Bartolacci
+      given-names: Michael R.
+  notes: "Update conference, year, pages, and DOI after acceptance."
