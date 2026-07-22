@@ -1,0 +1,11 @@
+run_order,artifact_letter,artifact_id,title,level,type,license,source_url,source_file_hint
+1,A,P03,Security Training Project,Intermediate,Applied case/project,CC BY-NC-SA 4.0,https://clark.center/details/krbertsc/14fee6a9-0c15-4895-ba76-a150a5856e24/1,Security_Training_Project.docx
+2,B,P10,Lab 1 Infection,Intermediate,Guided ransomware lab,CC BY-NC-SA 4.0,https://clark.center/details/bilge/70019f50-4f99-4472-a59d-864fc2977925/0,Lab 1 Infection.docx
+3,C,P06,Ukraine Student Activities,Intermediate,ICS case/project,CC BY-NC-SA 4.0,https://clark.center/details/gromanar/1023c27d-8704-414e-84c9-e6a8c653f10d/0,Ukraine Student Activities.docx
+4,D,P07,Capstone Summative Part 2,Capstone,Ransomware incident case,CC BY-NC-SA 4.0,https://clark.center/details/cardinaldtc/b313aef7-3ee9-48f0-9f8b-52fecf370eec/0,03.Capstone_Summative_Part_2.docx
+5,E,P12,Securing E-Commerce Solutions,Capstone,Applied team capstone,CC BY-NC-SA 4.0 (confirm),https://clark.center/details/krbertsc/71935ef8-85e2-4114-8633-797ca8eb585a/1,E-Commerce_Course_Materials.pdf
+6,F,P08,Policies and Compliance,Intermediate,Policy/design outline,CC BY-NC-SA 4.0,https://clark.center/details/aleiren/bad16dcd-725e-4324-8f93-f3a6f6677d71/0,Policies and Compliance.docx
+7,G,P11,Case Study,Introductory,MITRE ATT&CK mapping task,CC BY-NC-SA 4.0,https://clark.center/details/bilge/926b04b2-4478-4aaa-af23-3f82204dce96/2,Case Study.docx
+8,H,P13,SEED Secret-Key Encryption Lab,Advanced undergraduate,Cryptography lab,CC BY-NC-SA 4.0,https://seedsecuritylabs.org/Labs_20.04/Files/Crypto_Encryption/Crypto_Encryption.pdf,Crypto_Encryption.pdf
+9,I,P09,Soft PLC Lab,Graduate,ICS/PLC lab,Public domain (U.S. Government work),https://clark.center/details/navalpostgrad/b2a250b9-0e4b-4e4e-bd11-9dc91662a1ea/0,soft-plc-lab.docx
+10,J,P04,CyberEthics Presentation,Introductory,Position paper assignment,CC BY 4.0,https://clark.center/details/rmckernan/bcf141c3-2459-4d76-8799-c0886fd290df/2,03.CyberEthics_PositionPaperTopics_00.docx
