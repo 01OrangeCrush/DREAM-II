@@ -1,2 +1,0 @@
-# DREAM-II
-Prompt Fidelity
