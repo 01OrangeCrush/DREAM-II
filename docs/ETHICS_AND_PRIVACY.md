@@ -24,4 +24,4 @@ Do not commit:
 
 ## Public-source materials
 
-Link to source artifacts rather than copying them when licensing is restrictive or unclear. Preserve source attribution and license metadata.
+Link to source artifacts rather than copying them when licensing is restrictive or unclear. Preserve source attribution and license metadata. The pre-fidelity drift example is intentionally distilled from the test packet so the documented failure can be inspected without republishing assignment materials whose redistribution rights vary.
