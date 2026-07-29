@@ -27,6 +27,4 @@ preferred-citation:
       given-names: Mahdi
     - family-names: Bartolacci
       given-names: Michael R.
-  conference:
-    name: "ACM SIGCITE 2026"
-  notes: "Manuscript under anonymous review. Add acceptance status, pages, and DOI when available."
+  notes: "Manuscript under anonymous review at ACM SIGCITE 2026. Add acceptance status, pages, and DOI when available."
