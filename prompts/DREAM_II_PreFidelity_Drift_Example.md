@@ -50,7 +50,7 @@ This is the central lesson: **format compliance is not prompt fidelity**. Inspec
 
 ## The repair
 
-The frozen evaluator in [DREAM_II_LLM_Scoring_Script_Combined.md](DREAM_II_LLM_Scoring_Script_Combined.md) adds four linked safeguards:
+The frozen evaluator in [FROZEN_EVALUATOR_PROMPT.md](FROZEN_EVALUATOR_PROMPT.md) adds four linked safeguards:
 
 1. embeds the complete rubric and anchor language;
 2. explicitly prohibits substitution or reconstruction of another framework;
