@@ -1,0 +1,304 @@
+{
+  "method": {
+    "bootstrap_resamples": 1000,
+    "bootstrap_seed": 2026
+  },
+  "bases": {
+    "four_dimension": {
+      "dimensions": [
+        "authenticity",
+        "process_transparency",
+        "interactive_verification",
+        "evaluative_judgment"
+      ],
+      "faculty_pair_mean_ac1": 0.28716942661852135,
+      "faculty_pair_mean_qwk": 0.40833320680262536,
+      "llm_faculty_mean_ac1": 0.21589660713993752,
+      "llm_faculty_mean_qwk": 0.47357347843407704,
+      "faculty_pairs": [
+        {
+          "left": "Faculty_A",
+          "right": "Faculty_B",
+          "ac1": 0.38999775734469605,
+          "qwk": 0.4408945686900959,
+          "ac1_bootstrap_95_ci": [
+            0.1846142253302514,
+            0.5846249618076459
+          ]
+        },
+        {
+          "left": "Faculty_A",
+          "right": "Faculty_C",
+          "ac1": 0.22634123877504025,
+          "qwk": 0.3732590529247911,
+          "ac1_bootstrap_95_ci": [
+            -0.06258138980831898,
+            0.5518207282913167
+          ]
+        },
+        {
+          "left": "Faculty_A",
+          "right": "Faculty_D",
+          "ac1": 0.44696478721106064,
+          "qwk": 0.5348837209302325,
+          "ac1_bootstrap_95_ci": [
+            0.25674387802561494,
+            0.6349531733901095
+          ]
+        },
+        {
+          "left": "Faculty_B",
+          "right": "Faculty_C",
+          "ac1": 0.5319531953195321,
+          "qwk": 0.6841349605168701,
+          "ac1_bootstrap_95_ci": [
+            0.2765009742466573,
+            0.8009273415680883
+          ]
+        },
+        {
+          "left": "Faculty_B",
+          "right": "Faculty_D",
+          "ac1": 0.16986239566884723,
+          "qwk": 0.23649906890130357,
+          "ac1_bootstrap_95_ci": [
+            -0.19935816240638699,
+            0.567320147910724
+          ]
+        },
+        {
+          "left": "Faculty_C",
+          "right": "Faculty_D",
+          "ac1": -0.04210281460804835,
+          "qwk": 0.18032786885245922,
+          "ac1_bootstrap_95_ci": [
+            -0.3108690962566985,
+            0.29174374296221667
+          ]
+        }
+      ],
+      "llm_faculty_pairs": [
+        {
+          "left": "LLM",
+          "right": "Faculty_A",
+          "ac1": 0.2570234501973532,
+          "qwk": 0.5245901639344261,
+          "ac1_bootstrap_95_ci": [
+            -0.0026462092650894314,
+            0.4919684209834298
+          ]
+        },
+        {
+          "left": "LLM",
+          "right": "Faculty_B",
+          "ac1": 0.14893617021276598,
+          "qwk": 0.3944223107569721,
+          "ac1_bootstrap_95_ci": [
+            0.006148151543627231,
+            0.3170723809060239
+          ]
+        },
+        {
+          "left": "LLM",
+          "right": "Faculty_C",
+          "ac1": 0.45004582951420713,
+          "qwk": 0.5807860262008733,
+          "ac1_bootstrap_95_ci": [
+            0.19856396170218127,
+            0.7124687948003694
+          ]
+        },
+        {
+          "left": "LLM",
+          "right": "Faculty_D",
+          "ac1": 0.007580978635423806,
+          "qwk": 0.3944954128440368,
+          "ac1_bootstrap_95_ci": [
+            -0.19097464526634095,
+            0.19705200404729853
+          ]
+        }
+      ]
+    },
+    "five_dimension": {
+      "dimensions": [
+        "authenticity",
+        "process_transparency",
+        "ethical_genai_use",
+        "interactive_verification",
+        "evaluative_judgment"
+      ],
+      "faculty_pair_mean_ac1": 0.45051373148859225,
+      "faculty_pair_mean_qwk": 0.48547551938138395,
+      "llm_faculty_mean_ac1": 0.3880591710615221,
+      "llm_faculty_mean_qwk": 0.572775609512916,
+      "faculty_pairs": [
+        {
+          "left": "Faculty_A",
+          "right": "Faculty_B",
+          "ac1": 0.5341827647622962,
+          "qwk": 0.51035254616676,
+          "ac1_bootstrap_95_ci": [
+            0.36736884581155693,
+            0.6816660594314495
+          ]
+        },
+        {
+          "left": "Faculty_A",
+          "right": "Faculty_C",
+          "ac1": 0.40196497223408795,
+          "qwk": 0.4645406949071871,
+          "ac1_bootstrap_95_ci": [
+            0.16445642619031395,
+            0.6568793289695726
+          ]
+        },
+        {
+          "left": "Faculty_A",
+          "right": "Faculty_D",
+          "ac1": 0.5749767565413735,
+          "qwk": 0.5867768595041323,
+          "ac1_bootstrap_95_ci": [
+            0.4272232227416379,
+            0.7194235429154445
+          ]
+        },
+        {
+          "left": "Faculty_B",
+          "right": "Faculty_C",
+          "ac1": 0.6308915388983533,
+          "qwk": 0.7514685946678716,
+          "ac1_bootstrap_95_ci": [
+            0.4412415767839864,
+            0.8354360943499725
+          ]
+        },
+        {
+          "left": "Faculty_B",
+          "right": "Faculty_D",
+          "ac1": 0.3657796773748794,
+          "qwk": 0.32074221338634856,
+          "ac1_bootstrap_95_ci": [
+            0.060060653483560086,
+            0.669516018650744
+          ]
+        },
+        {
+          "left": "Faculty_C",
+          "right": "Faculty_D",
+          "ac1": 0.19528667912056333,
+          "qwk": 0.27897220765600417,
+          "ac1_bootstrap_95_ci": [
+            -0.03723688123340689,
+            0.45939560249864525
+          ]
+        }
+      ],
+      "llm_faculty_pairs": [
+        {
+          "left": "LLM",
+          "right": "Faculty_A",
+          "ac1": 0.4275082295691999,
+          "qwk": 0.5961002785515321,
+          "ac1_bootstrap_95_ci": [
+            0.21810489380720788,
+            0.6104076805342981
+          ]
+        },
+        {
+          "left": "LLM",
+          "right": "Faculty_B",
+          "ac1": 0.33564413633737733,
+          "qwk": 0.5214105793450882,
+          "ac1_bootstrap_95_ci": [
+            0.22924415868992537,
+            0.45496270797475613
+          ]
+        },
+        {
+          "left": "LLM",
+          "right": "Faculty_C",
+          "ac1": 0.5590828924162257,
+          "qwk": 0.7007481296758105,
+          "ac1_bootstrap_95_ci": [
+            0.34678607299178404,
+            0.7694956108556322
+          ]
+        },
+        {
+          "left": "LLM",
+          "right": "Faculty_D",
+          "ac1": 0.2300014259232854,
+          "qwk": 0.47284345047923326,
+          "ac1_bootstrap_95_ci": [
+            0.06391692262688316,
+            0.3774847505934593
+          ]
+        }
+      ]
+    }
+  },
+  "threshold": {
+    "rule": "total < 10 = REVISE; total >= 10 = KEEP",
+    "faculty_simple_agreement_range": [
+      0.4,
+      0.9
+    ],
+    "llm_faculty_simple_agreement_range": [
+      0.5,
+      0.9
+    ],
+    "pairs": [
+      {
+        "left": "Faculty_A",
+        "right": "Faculty_B",
+        "simple_agreement": 0.7
+      },
+      {
+        "left": "Faculty_A",
+        "right": "Faculty_C",
+        "simple_agreement": 0.5
+      },
+      {
+        "left": "Faculty_A",
+        "right": "Faculty_D",
+        "simple_agreement": 0.9
+      },
+      {
+        "left": "Faculty_B",
+        "right": "Faculty_C",
+        "simple_agreement": 0.8
+      },
+      {
+        "left": "Faculty_B",
+        "right": "Faculty_D",
+        "simple_agreement": 0.6
+      },
+      {
+        "left": "Faculty_C",
+        "right": "Faculty_D",
+        "simple_agreement": 0.4
+      },
+      {
+        "left": "LLM",
+        "right": "Faculty_A",
+        "simple_agreement": 0.6
+      },
+      {
+        "left": "LLM",
+        "right": "Faculty_B",
+        "simple_agreement": 0.9
+      },
+      {
+        "left": "LLM",
+        "right": "Faculty_C",
+        "simple_agreement": 0.9
+      },
+      {
+        "left": "LLM",
+        "right": "Faculty_D",
+        "simple_agreement": 0.5
+      }
+    ]
+  }
+}
