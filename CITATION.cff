@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "Please cite the DREAM II repository and its associated paper."
-title: "DREAM II: Prompt Fidelity and AI-Resilient Assessment Evaluation"
+message: "Please cite the associated SIGCITE 2026 paper and this replication package."
+title: "DREAM II Prompt Fidelity Replication Package"
 type: dataset
 authors:
   - family-names: McCauley
@@ -12,9 +12,9 @@ authors:
   - family-names: Bartolacci
     given-names: Michael R.
 repository-code: "https://github.com/01OrangeCrush/DREAM-II"
-version: "0.2.0"
-date-released: "2026-07-29"
-license: "CC-BY-4.0"
+version: "1.0.0"
+date-released: "2026-09-29"
+license: CC-BY-4.0
 preferred-citation:
   type: conference-paper
   title: "Prompt Fidelity in LLM-Assisted Assessment: Rubric Drift and Operational Validation of an AI-Resilient Cybersecurity Assessment Rubric"
@@ -27,4 +27,6 @@ preferred-citation:
       given-names: Mahdi
     - family-names: Bartolacci
       given-names: Michael R.
-  notes: "Manuscript under anonymous review at ACM SIGCITE 2026. Add acceptance status, pages, and DOI when available."
+  collection-title: "Proceedings of the ACM Conference on Cybersecurity and Information Technology Education (SIGCITE 2026)"
+  year: 2026
+  notes: "DOI, ISBN, venue dates, location, and page range pending official conference metadata."

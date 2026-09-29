@@ -1,105 +1,65 @@
-# DREAM II: Prompt Fidelity and AI-Resilient Assessment Evaluation
+# DREAM II Prompt Fidelity Replication Package
 
-DREAM II is a pilot study of whether a frozen large language model (LLM) can apply a published AI-resilient assignment-design rubric consistently when evaluating cybersecurity assignment prompts. Four faculty evaluators and a corrected, prompt-faithful LLM independently scored ten public prompts.
+This repository accompanies the SIGCITE 2026 paper **Prompt Fidelity in LLM-Assisted Assessment: Rubric Drift and Operational Validation of an AI-Resilient Cybersecurity Assessment Rubric** by Jennifer McCauley, Edward J. Glantz, Mahdi Nasereddin, and Michael R. Bartolacci.
 
-The repository's central methodological lesson is simple: **a polished LLM evaluation can use the wrong rubric without announcing the substitution**. Prompt fidelity must be verified before reliability statistics or validity claims are interpreted.
+The study tested whether four cybersecurity faculty and a frozen hosted LLM evaluator could apply a published five-dimension assignment-design rubric consistently. The main methodological result is that prompt fidelity must be checked before agreement or validity claims are interpreted.
 
-> **Project status:** Manuscript under anonymous review for ACM SIGCITE 2026. This public repository is reserved for the replication package and does not reveal the anonymous submission URL. Human-participant data collection must not begin until the required Penn State IRB determination or approval is in place.
+## Headline results
 
-## What to inspect first
+Over the four dimensions with score variation:
 
-Readers can understand the main contribution in about five minutes:
+- faculty-faculty mean Gwet AC1: 0.287;
+- faculty-faculty mean quadratic weighted kappa: 0.408;
+- LLM-faculty mean Gwet AC1: 0.216;
+- LLM-faculty mean quadratic weighted kappa: 0.474.
 
-1. Open the [pre-fidelity drift example](prompts/DREAM_II_PreFidelity_Drift_Example.md). Read the one-sentence prompt, then compare the requested rubric dimensions with the five plausible but unrequested criteria returned by the model.
-2. Open the [final frozen evaluator prompt](prompts/DREAM_II_LLM_Scoring_Script_Combined.md). Visually locate the embedded rubric, the substitution prohibition, the exact preflight dimension check, the anchor-linked rationale requirement, and the midpoint re-check.
-3. Use the [Prompt Fidelity Inspection Guide](docs/PROMPT_FIDELITY_INSPECTION_GUIDE.md) to compare the two artifacts side by side.
+Including the provenance-floored Ethical GenAI Use dimension raises the respective values to 0.451, 0.485, 0.388, and 0.573. Run `python analysis/reproduce.py` to regenerate the released estimates.
 
-### The drift at a glance
+## Repository contents
 
-| Published rubric required | Early model returned |
-|---|---|
-| Authenticity | Real-World Relevance |
-| Process Transparency | Complexity & Critical Thinking |
-| Ethical GenAI Use | Open-Endedness / Student Agency |
-| Interactive Verification | Authentic Evaluation Criteria |
-| Evaluative Judgment | AI / Academic Integrity Vulnerability |
+```text
+analysis/                         Agreement analysis and generated results
+data/                             Catalog, coded ratings, transcripts, and correction log
+docs/                             Methods, data, privacy, model, and release documentation
+paper/                            Camera-ready source and PDF
+prompts/                          Frozen evaluator prompt without third-party assignment text
+templates/                        Coded blank scoring workbook
+```
 
-The drifted response still had five labels, integer scores, rationales, a total out of 15, and a redesign recommendation. Its form looked correct; its construct was not. **Inspect labels and anchors before numbers.**
+## Reproduce the analysis
 
-## Research focus
+Python 3.10 or later is sufficient; no third-party package is required.
 
-The project evaluates the operational consistency of the rubric and the fidelity of the LLM evaluation process. It does not evaluate faculty performance, students, student work, grades, educational records, or protected health information.
+```text
+python analysis/reproduce.py
+```
 
-The five published dimensions are:
+Expected output:
 
-1. Authenticity
-2. Process Transparency
-3. Ethical GenAI Use
-4. Interactive Verification
-5. Evaluative Judgment
+```text
+Four-dimension faculty means: 0.287 0.408
+Four-dimension LLM-faculty means: 0.216 0.474
+```
 
-Each dimension is scored from 1 (not addressed) to 3 (fully addressed). A total below 10 of 15 is flagged for revision.
+## Data and licensing
 
-## Why the final prompt is different
+The analytic unit is a publicly available assignment prompt. This repository releases metadata and source links rather than third-party assignment files. It contains no student records or student work. Faculty ratings are coded as `Faculty_A` through `Faculty_D`; the repository does not contain a name-to-code linkage.
 
-The early prompt referred informally to a rubric in an attached PowerPoint and asked the model to evaluate an assignment. It did not prove that the model had recovered the intended instrument. The repaired prompt therefore:
+Original repository documentation, prompts, metadata, and released data are licensed CC BY 4.0 except where noted. Linked assignment materials retain their original rights and licenses. See `LICENSE`, `LICENSE_NOTES.md`, and `data/artifact_catalog.csv`.
 
-- embeds the complete rubric and its anchor language;
-- prohibits renaming, supplementing, substituting, or reconstructing another framework;
-- requires the model to enumerate the five dimensions exactly before any scoring;
-- binds every rationale to assignment evidence and the relevant anchor;
-- repeats the fidelity check halfway through the run; and
-- stops scoring when verification fails.
+## Citation and publication metadata
 
-These are broadly useful GenAI controls whenever a task depends on a rubric, policy, schema, taxonomy, or checklist.
+Use `CITATION.cff` for the current citation. The conference DOI, ISBN, venue dates, location, and final page range have not yet been supplied. `docs/PUBLICATION_METADATA_TODO.md` records every location that must be updated when those details arrive.
 
-## Reproducibility workflow
+`CHECKSUMS.sha256` records release-file hashes for integrity checking.
 
-1. Freeze the model, platform, evaluator prompt, artifact order, and session settings.
-2. Run and verify the five-dimension preflight check.
-3. Submit artifacts one at a time in the seeded order documented in the evaluator script.
-4. Repeat the fidelity check at the midpoint.
-5. Preserve any failed output as a fidelity-failure artifact; do not relabel or score it after the fact.
-6. Collect faculty scores using coded reviewer tabs (Reviewer A-D); names must not appear in analytic files.
-7. Validate spreadsheet ranges, threshold coding, and scoring completeness before analysis.
-8. Compute descriptive statistics, percent agreement, Gwet's AC1, and weighted Cohen's kappa as specified in the analysis plan.
-9. Report results only in aggregate; do not rank or identify individual evaluators.
+## Contact
 
-## Repository map
-
-- `prompts/DREAM_II_PreFidelity_Drift_Example.md` - documented criterion-substitution failure and why it looked trustworthy.
-- `prompts/DREAM_II_LLM_Scoring_Script_Combined.md` - frozen final evaluator with initial and midpoint fidelity checks.
-- `docs/PROMPT_FIDELITY_INSPECTION_GUIDE.md` - side-by-side reader inspection path and pass/fail rule.
-- `docs/METHODS.md` - study design, scoring protocol, and planned analyses.
-- `docs/REPRODUCIBILITY.md` - run metadata and integrity checklist.
-- `docs/ETHICS_AND_PRIVACY.md` - participant and repository safeguards.
-- `docs/DATA_DICTIONARY.md` - public metadata and scoring fields.
-- `data/artifact_catalog.csv` - source links, licenses, and seeded artifact order.
-- `templates/DREAM_II_Rubric_Scoring_Workbook_Coded.xlsx` - blank coded faculty-scoring workbook.
-
-## Data availability and boundaries
-
-This repository may contain public-source artifact metadata and links, blank or coded templates, frozen prompts, analysis scripts, fidelity-failure examples, and de-identified or aggregate results approved for release.
-
-Do **not** upload evaluator identities or linkage files, identifiable scoring workbooks, IRB correspondence, identifiable consent records, restricted copyrighted artifacts, confidential Penn State records, or credentials. Any temporary reviewer linkage must be stored separately on an approved Penn State system and destroyed according to the approved protocol.
-
-The pre-study source packet included assignment text with varying rights. The repository therefore distills the documented drift episode without republishing that assignment packet. Required scholarly and third-party attribution is retained.
-
-## Licensing
-
-Except where otherwise noted, original documentation, research instruments, prompts, metadata, and released datasets are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Third-party materials are excluded and retain their respective terms. See `LICENSE`, `LICENSE_NOTES.md`, and `data/artifact_catalog.csv`.
-
-## Citation
-
-Citation metadata are provided in `CITATION.cff`. Update conference status, DOI, pages, release version, and archival identifiers after acceptance.
-
-## Authors and contact
-
-Jennifer McCauley; Edward J. Glantz; Mahdi Nasereddin; Michael R. Bartolacci  
+Edward J. Glantz, PhD  
 College of Information Sciences and Technology  
 The Pennsylvania State University  
-Contact: Edward J. Glantz, PhD - ejg8@psu.edu
+ejg8@psu.edu
 
-## Disclaimer
+## Scope
 
-This repository is a research artifact. Its presence does not indicate IRB approval, publication acceptance, endorsement by Penn State, or validation for high-stakes educational decisions. The LLM workflow supports disclosed faculty review and triage; it is not a replacement for faculty judgment.
+These materials support reproducibility and methodological inspection. They do not validate the rubric for high-stakes or autonomous educational decisions.
