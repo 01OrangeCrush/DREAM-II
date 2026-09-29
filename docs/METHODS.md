@@ -28,21 +28,21 @@ The total score ranges from 5 to 15. A total below 10 is flagged for revision; 1
 
 ## Faculty evaluation
 
-Each faculty evaluator receives an assigned coded worksheet (Reviewer A-D), the rubric, evaluator instructions, and source links. Evaluators score independently and provide a concise rationale for each dimension. Names and initials are not entered into analytic workbooks.
+Each faculty evaluator used an assigned worksheet, the rubric, evaluator instructions, and source links. Evaluators scored independently and supplied a concise rationale for each dimension. The public ratings file replaces source worksheet identities with `Faculty_A` through `Faculty_D` and omits the name-to-code linkage.
 
 ## LLM evaluation
 
-The LLM is run using the frozen evaluator script in `prompts/`. The script requires an initial fidelity check, fixed output structure, one artifact per turn, and a midpoint fidelity re-check. Model, platform, date, session settings, and any platform-reported version information should be recorded in the research log.
+The LLM was run using the frozen evaluator script in `prompts/`. The script required an initial fidelity check, fixed output structure, one artifact at a time, and a midpoint fidelity re-check. Penn State AI Studio identified the hosted model as OpenAI GPT-5.4 on July 14, 2026. Temperature 0 and zero retention were requested but could not be independently verified.
 
-## Planned analyses
+## Analyses
 
-- Descriptive statistics by artifact and rubric dimension
-- Exact and adjacent-category percent agreement
-- Gwet's AC1 for chance-corrected agreement
-- Weighted Cohen's kappa for pairwise ordinal comparisons, where appropriate
-- Qualitative examination of score rationales and fidelity failures
+- Gwet AC1 for chance-corrected pairwise agreement
+- Quadratic weighted Cohen kappa for ordinal pairwise agreement
+- 1,000 assignment-level bootstrap resamples with seed 2026
+- Simple agreement at the published KEEP/REVISE threshold
+- Separate four-dimension estimates excluding the provenance-floored Ethical GenAI Use dimension and five-dimension estimates for comparability
 
-Because this is a small pilot, estimates should be reported with appropriate caution. The study does not support conclusions about population-level faculty performance.
+Because this is a small exploratory pilot, the estimates demonstrate and initially test the workflow but do not establish robustness, transferability, stable subgroup effects, or population-level faculty performance.
 
 ## Reporting
 

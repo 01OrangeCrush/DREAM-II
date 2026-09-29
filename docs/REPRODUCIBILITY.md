@@ -23,12 +23,17 @@ Record the following for every LLM run:
 - Keep calibration artifacts separate from the analytic sample.
 - Verify that threshold coding uses `total < 10` for REVISE and `total >= 10` for KEEP.
 
-## Suggested release artifacts
+## Released artifacts
 
-- frozen evaluator script;
+- frozen evaluator prompt;
 - artifact catalog and source links;
 - blank coded scoring workbook;
-- analysis code;
-- aggregate/de-identified results;
-- figure-generation code;
-- manuscript citation and version information.
+- corrected de-identified ratings and correction log;
+- raw frozen-session text and fidelity checks;
+- pre-analytic drift transcript;
+- executable analysis code and generated outputs;
+- manuscript source, PDF, citation, and version information.
+
+## Verification
+
+From the repository root, run `python analysis/reproduce.py`. The four-dimension point estimates should round to faculty AC1 0.287, faculty quadratic weighted kappa 0.408, LLM-faculty AC1 0.216, and LLM-faculty quadratic weighted kappa 0.474.

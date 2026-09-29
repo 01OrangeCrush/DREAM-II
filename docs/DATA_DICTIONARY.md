@@ -18,16 +18,16 @@
 
 | Field | Description | Allowed values |
 |---|---|---|
-| `reviewer_code` | Coded evaluator identifier | A, B, C, D, or LLM |
+| `rater` | Coded evaluator identifier | Faculty_A, Faculty_B, Faculty_C, Faculty_D, or LLM |
+| `rater_type` | Evaluator class | faculty or model |
 | `artifact_id` | Artifact identifier | P03-P13 as cataloged |
 | `authenticity` | Rubric score | 1, 2, 3 |
 | `process_transparency` | Rubric score | 1, 2, 3 |
 | `ethical_genai_use` | Rubric score | 1, 2, 3 |
 | `interactive_verification` | Rubric score | 1, 2, 3 |
 | `evaluative_judgment` | Rubric score | 1, 2, 3 |
-| `total` | Sum of five dimension scores | 5-15 |
-| `decision` | Rubric threshold result | REVISE if total <10; KEEP otherwise |
-| `rationale_*` | Brief evidence supporting each score | Text |
+
+Totals and threshold decisions are derived by `analysis/reproduce.py` rather than stored redundantly in the released ratings file.
 
 ## Prohibited fields in public analytic data
 

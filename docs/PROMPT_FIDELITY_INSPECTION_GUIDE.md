@@ -7,7 +7,7 @@ The most important artifact in this repository is not a score table. It is the v
 Open these files side by side:
 
 - [Pre-Fidelity Rubric Drift Example](../prompts/DREAM_II_PreFidelity_Drift_Example.md)
-- [Frozen Prompt-Faithful LLM Evaluator](../prompts/DREAM_II_LLM_Scoring_Script_Combined.md)
+- [Frozen Prompt-Faithful LLM Evaluator](../prompts/FROZEN_EVALUATOR_PROMPT.md)
 
 Then inspect in this order.
 
