@@ -1,0 +1,2 @@
+artifact_id,rater,dimension,original_value,corrected_value,reason
+P09,Faculty_D,ethical_genai_use,2,1,Corrected after confirmation with the rater; the recorded rationale indicated the criterion was not addressed.
