@@ -49,7 +49,7 @@ Original repository documentation, prompts, metadata, and released data are lice
 
 ## Citation and publication metadata
 
-Use `CITATION.cff` for the current citation. The version of record is available at [https://doi.org/10.1145/3857770.3858226](https://doi.org/10.1145/3857770.3858226). The proceedings ISBN is `979-8-4007-3084-9/2026/11`. The conference will be held November 12-14, 2026, in Wilmington, North Carolina, USA. The final page range remains pending.
+Use `CITATION.cff` for the current citation. The proceedings ISBN is `979-8-4007-3084-9/2026/11`. The conference will be held November 12-14, 2026, in Wilmington, North Carolina, USA. The Paper 13 DOI and final page range remain pending. At the author's direction, `paper/main.tex` and the PDF temporarily contain the Paper 08 DOI; replace that single DOI field and rebuild the PDF when the Paper 13 DOI is issued.
 
 `CHECKSUMS.sha256` records release-file hashes for integrity checking.
 
