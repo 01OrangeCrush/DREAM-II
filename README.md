@@ -49,7 +49,7 @@ Original repository documentation, prompts, metadata, and released data are lice
 
 ## Citation and publication metadata
 
-Use `CITATION.cff` for the current citation. The conference DOI, ISBN, venue dates, location, and final page range have not yet been supplied. `docs/PUBLICATION_METADATA_TODO.md` records every location that must be updated when those details arrive.
+Use `CITATION.cff` for the current citation. The version of record is available at [https://doi.org/10.1145/3857770.3858226](https://doi.org/10.1145/3857770.3858226). The proceedings ISBN is `979-8-4007-3084-9/2026/11`. The conference will be held November 12-14, 2026, in Wilmington, North Carolina, USA. The final page range remains pending.
 
 `CHECKSUMS.sha256` records release-file hashes for integrity checking.
 
