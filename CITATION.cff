@@ -29,4 +29,6 @@ preferred-citation:
       given-names: Michael R.
   collection-title: "Proceedings of the ACM Conference on Cybersecurity and Information Technology Education (SIGCITE 2026)"
   year: 2026
-  notes: "27th Annual ACM Conference on Cybersecurity and Information Technology Education (SIGCITE '26), November 12-14, 2026, Wilmington, NC, USA. ISBN 979-8-4007-3084-9/2026/11. Paper-specific DOI and final page range pending."
+  doi: "10.1145/3857770.3858231"
+  url: "https://doi.org/10.1145/3857770.3858231"
+  notes: "27th Annual ACM Conference on Cybersecurity and Information Technology Education (SIGCITE '26), November 12-14, 2026, Wilmington, NC, USA. ISBN 979-8-4007-3084-9/2026/11. Final page range pending."
